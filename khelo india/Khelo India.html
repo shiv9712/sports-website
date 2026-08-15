@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>जानो भारत</title>
+
+    <link rel="stylesheet" href="Khelo India.css">
+
+</head>
+
+<body>
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="about.html">
+            About us
+        </a>
+
+        <div class="games">
+
+            <button onclick="showGames()">
+                Games
+            </button>
+
+            <div id="gameMenu" class="game-menu">
+
+                <a href="01-volleyball.html" target="_blank">
+                    🏐 Volleyball
+                </a>
+
+                <a href="02-football.html" target="_blank">
+                    ⚽ Football
+                </a>
+
+                <a href="03-badminton.html" target="_blank">
+                    🏸 Badminton
+                </a>
+
+                <a href="04-basketball.html" target="_blank">
+                    🏀 Basketball
+                </a>
+
+                <a href="05-cricket.html" target="_blank">
+                    🏏 Cricket
+                </a>
+
+                <a href="06-hockey.html" target="_blank">
+                    🏑 Hockey
+                </a>
+
+                <a href="07-table-tennis.html" target="_blank">
+                    🏓 Table Tennis
+                </a>
+
+                <a href="08-tennis.html" target="_blank">
+                    🎾 Tennis
+                </a>
+
+                <a href="09-boxing.html" target="_blank">
+                    🥊 Boxing
+                </a>
+
+                <a href="10-wrestling.html" target="_blank">
+                    🤼 Wrestling
+                </a>
+
+                <a href="11-athletics.html" target="_blank">
+                    🏃 Athletics
+                </a>
+
+                <a href="12-swimming.html" target="_blank">
+                    🏊 Swimming
+                </a>
+
+                <a href="13-archery.html" target="_blank">
+                    🏹 Archery
+                </a>
+
+                <a href="14-cycling.html" target="_blank">
+                    🚴 Cycling
+                </a>
+
+            </div>
+
+        </div>
+
+       
+
+    </nav>
+
+    <div class="item">
+
+        <div class="overlay"></div>
+
+        <div class="container">
+
+            <div class="bannertxt">
+
+                <h1>
+                    जानो भारत
+                </h1>
+
+                <h2>
+                    PROGRAMME FOR KNOWING SPORTS
+                </h2>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        function showGames() {
+
+            document
+                .getElementById("gameMenu")
+                .classList
+                .toggle("show");
+
+        }
+
+        document.addEventListener("click", function(event) {
+
+            const games = document.querySelector(".games");
+
+            const menu = document.getElementById("gameMenu");
+
+            if (!games.contains(event.target)) {
+
+                menu.classList.remove("show");
+
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>
